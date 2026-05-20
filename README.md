@@ -29,6 +29,19 @@ Router -> Switch -> Laptop
 
 ---
 
+## Troubleshooting
+
+Issue:
+```text
+% IP addresses may not be configured on L2 links.
+```
+
+Cause:
+- FastEthernet interfaces on this Cisco 1800 model operate as Layer 2 switchports.
+
+Fix:
+- Configured IP addressing on `interface Vlan1` instead of physical FastEthernet interfaces.
+
 # Configurations Completed
 
 ## Router
